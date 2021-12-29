@@ -35,21 +35,28 @@ body {
     font-size: 16px;
     font-family: 'Red Hat Display', sans-serif;
     max-height: 100vh;
-    min-width: 100%;
-    background-color: var(--pale-blue);    
-    background-image: url("/images/pattern-background-desktop.svg"), no-repeat cover;
+    min-width: 100vw;
+    background: url("images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-color: var(--pale-blue);
+    min-height: 100vh;
+    display: flex;
     
 
 }
 
 .card-container {
-    background-color: white;
+    /* background-color: white; */
     max-width: 450px;
     border-radius: 10px;
     margin:  0 auto;
     
     display: flex;
     flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
    
     min-height: 90%;
 
@@ -66,6 +73,9 @@ body {
 
 .card-info {
     text-align: center;
+    background-color: white;
+    border-radius: 0  0 10px 10px;
+    padding: 2em 0;
 }
 
 .summary-title {
@@ -77,17 +87,49 @@ body {
     color: var(--desat-blue);
     max-width: 70%; 
     margin: auto;
+    padding-bottom: 1em;
 }
-.card-plan {
-    background-color: var(--blue);
-    padding: 1.2em;
+.card_plan {
+    background-color: var(--very-pale-blue);
+    padding: 0.75rem;
     width: 80%;
-}
-.annual-plan {
     display: flex;
+    grid-template-columns: repeat(2 1fr);
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+    margin: 1em auto;
+    border-radius: 10px;
+    color: var(--desat-blue);
 }
-.btn{
+.plan-title{
+    font-weight: 700;
+
+}
+.btn { 
     padding: 1.2em 1em;
     width: 80%;
     margin: .5em 0;
+    border: none;
+    font-weight: 700;
+    border-radius: 10px;
+    
+}
+.btn > a {
+    text-decoration: none;
+    color: var(--desat-blue);
+}
+.btn-payment {
+    background-color: var(--bright-blue);
+    color: white;
+    box-shadow: 1px 8px 10px var(--pale-blue);
+    
+}
+.btn-payment a {
+    color: var(--very-pale-blue);
+}
+.btn-cancel {
+    background-color: transparent;
+    color: var(--desat-blue)
 }
