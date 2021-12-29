@@ -34,7 +34,7 @@
 body {
     font-size: 16px;
     font-family: 'Red Hat Display', sans-serif;
-    max-height: 100%;
+    max-height: 100vh;
     min-width: 100%;
     background-color: var(--pale-blue);    
     background-image: url("/images/pattern-background-desktop.svg"), no-repeat cover;
@@ -47,15 +47,47 @@ body {
     max-width: 450px;
     border-radius: 10px;
     margin:  0 auto;
-    margin-top: 25%;
-    display: grid;
-    align-items: center;
-    justify-items: center;
+    
+    display: flex;
+    flex-direction: column;
+   
     min-height: 90%;
 
     
 }
 .card-hero {
-    width: 100%;
-}
+    background-color: var(--bright-blue);
+    border-radius: 10px 10px 0 0;
     
+}
+#hero-img {
+    border-radius: 10px;
+}
+
+.card-info {
+    text-align: center;
+}
+
+.summary-title {
+    padding: 1.5rem 0;
+    font-size: 1.7rem;
+    font-weight: 900;
+}   
+.summary-desc {
+    color: var(--desat-blue);
+    max-width: 70%; 
+    margin: auto;
+}
+.card-plan {
+    background-color: var(--blue);
+    padding: 1.2em;
+    width: 80%;
+}
+.annual-plan {
+    display: flex;
+}
+.btn{
+    padding: 1.2em 1em;
+    width: 80%;
+    margin: .5em 0;
+}
