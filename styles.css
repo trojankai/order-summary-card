@@ -26,9 +26,36 @@
 
     
 }
-
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 body {
-    font-size: var(--font-size);
-    font-family: 'Red Hat Display';
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+    max-height: 100%;
+    min-width: 100%;
+    background-color: var(--pale-blue);    
+    background-image: url("/images/pattern-background-desktop.svg"), no-repeat cover;
+    
+
+}
+
+.card-container {
+    background-color: white;
+    max-width: 450px;
+    border-radius: 10px;
+    margin:  0 auto;
+    margin-top: 25%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    min-height: 90%;
+
     
 }
+.card-hero {
+    width: 100%;
+}
+    
