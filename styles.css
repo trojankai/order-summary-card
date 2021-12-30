@@ -42,6 +42,8 @@ body {
     background-color: var(--pale-blue);
     min-height: 100vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
     
 
 }
@@ -52,13 +54,6 @@ body {
     min-width: 375px;
     border-radius: 10px;
     margin:  0 auto;
-    
-    display: flex;
-    flex-direction: column;
-    
-    justify-content: center;
-    align-items: center;
-   
     min-height: 90%;
 
     
@@ -106,7 +101,7 @@ body {
     border-radius: 10px;
     color: var(--desat-blue);
 }
-.card_plan::nth-child(2) {
+.stacked {
     margin-right: 1em;
 }
 .plan-title{
